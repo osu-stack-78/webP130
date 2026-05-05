@@ -18,6 +18,29 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	text-align: left;
+	overflow: auto;
+}
+.texttitle {
+	font-size: 24px;
+	color: #F60;
+}
+.texttitle {
+	font-size: 24px;
+	color: #F60;
+	text-align: center;
+}
+.texttitle {
+	font-size: 24px;
+	color: #C63;
+}
+.texttitle {
+	font-size: 24px;
+	color: #F30;
+}
+.titelsyte {
+	font-size: 36px;
+	color: #369;
 }
 #item {
 	float: right;
@@ -34,15 +57,84 @@
 	height: 50px;
 	width: 1280px;
 }
+.title {
+	color: #333;
+}
+.transition {
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+.transition:hover {
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onload="MM_preloadImages('drink-1.jpg')">
 <div id="container">
   <div id="header"><img src="images/banner02.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <table width="926" height="600" border="0">
+      <tr>
+        <td colspan="2" class="texttitle"><p class="texttitle"><span class="title transition"><a name="top" id="top"></a>特色拉麵&nbsp; |   &nbsp;<a href="#top01"> 火雞肉飯&nbsp; |</a> <a href="#top02">&nbsp; 鮮果飲料</a></span></p>
+        <p class="texttitle">嘉義是隱藏版的美食之都。以<strong data-path-to-node="0" data-index-in-node="12">火雞肉飯</strong>聞名全球，獨特的<strong data-path-to-node="0" data-index-in-node="24">白醋涼麵</strong>與<strong data-path-to-node="0" data-index-in-node="29">豆漿豆花</strong>展現在地特色，加上濃郁的<strong data-path-to-node="0" data-index-in-node="45">砂鍋魚頭</strong>，價格親民且工法細膩，是吃貨必訪的寶庫。</p></td>
+      </tr>
+      <tr>
+        <td><p>&nbsp;</p>
+        <p class="texttitle">特色拉麵</p>
+        <p>初八拉麵品牌創始人陳俊良桑秉持著台灣的精神，堅持使用最優質的食材，擁有最獨特的湯底配方和最專業的烹飪技巧。每一碗拉麵都是他對料理的極致追求和對顧客的用心款待。 初衷的用心 堅持的鮮味 一碗感動人心的拉麵おいしいラーメン&quot;</p>
+        <p>資料來源:由初八拉麵提供</p></td>
+        <td><img src="noodle-2.jpg" width="399" height="251" class="transition" /></td>
+      </tr>
+      <tr>
+        <td><p class="texttitle"><a name="anchor01" id="anchor01"></a>火雞肉飯</p>
+          <p>嘉義火雞肉飯｜三角窗熱門店，口感札實的穩S定風味<br />
+        這間位於三角窗店面的火雞肉飯，雖然內部用餐區和廚房區域各佔一半，導致用餐空間非常擁擠，但好在小吃類型的翻桌速度算快。這以熱門程度來說還在可接受範圍，可以說是嘉義美食的熱門首選。</p>
+          <p>資料來源:google 地圖評價</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top01"> top</a></p></td>
+        <td><img src="food-1.jpg" name="O02" width="399" height="266" class="transition" id="O02" /></td>
+      </tr>
+      <tr>
+        <td><p>&nbsp;</p>
+          <p class="texttitle"><a name="anchor02" id="anchor02"></a>鮮果飲料</p>
+        <p>知更鳥巢是嘉義在地人的<strong data-path-to-node="0" data-index-in-node="11">私藏神店</strong>，被譽為葡萄柚綠茶的始祖。相較於排隊名店，它主打<strong data-path-to-node="0" data-index-in-node="39">超高 CP 值</strong>，提供大杯選擇且果肉份量驚人，幾乎佔據杯身三分之一。口感厚實飽滿，加入話梅後酸甜回甘，不僅<strong data-path-to-node="0" data-index-in-node="91">無需長久排隊</strong>，價格也更親民，是追求真材實料與大口滿足感的果茶首選。</p>
+        <p>資料來源:google 地圖評價</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#top02">top</a></p></td>
+        <td><img src="drink-2.jpg" name="O01" width="400" height="267" class="transition" id="O01" onmouseover="MM_swapImage('O01','','drink-1.jpg',1)" onmouseout="MM_swapImgRestore()" /></td>
+      </tr>
+    </table>
+  </div>
   <div id="item"><ul id="MenuBar1" class="MenuBarVertical">
     <li><a href="main.html">古色古香</a>    </li>
     <li><a href="new2.html">大痰美食</a></li>
