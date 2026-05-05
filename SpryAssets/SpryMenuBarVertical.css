@@ -31,11 +31,11 @@ ul.MenuBarVertical li
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	font-size: 150%;
+	font-size: 100%;
 	position: relative;
-	text-align: center;
+	text-align: left;
 	cursor: pointer;
-	width: 11.6em;
+	width: 8em;
 }
 /* Submenus should appear slightly overlapping to the right (95%) and up (-5%) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
 ul.MenuBarVertical ul
@@ -97,7 +97,7 @@ ul.MenuBarVertical a:hover, ul.MenuBarVertical a:focus
 /* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
 ul.MenuBarVertical a.MenuBarItemHover, ul.MenuBarVertical a.MenuBarItemSubmenuHover, ul.MenuBarVertical a.MenuBarSubmenuVisible
 {
-	background-color: #393;
+	background-color: #33C;
 	color: #FFF;
 }
 
