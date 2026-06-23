@@ -18,6 +18,7 @@
 	float: left;
 	height: 600px;
 	width: 1000px;
+	overflow: auto;
 }
 #item {
 	float: right;
@@ -34,15 +35,68 @@
 	height: 50px;
 	width: 1280px;
 }
+.titlestyle {
+	font-family: "微軟正黑體";
+	font-size: 36px;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryEffects.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+function MM_effectAppearFade(targetElement, duration, from, to, toggle)
+{
+	Spry.Effect.DoFade(targetElement, {duration: duration, from: from, to: to, toggle: toggle});
+}
+</script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/banner03.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <table width="934" height="865" border="1">
+      <tr>
+        <td height="42" colspan="2" align="center">文創產業園區 | 北門驛 | 花磚博物館</td>
+      </tr>
+      <tr>
+        <td height="44" colspan="2" align="center" class="titlestyle">嘉義文化創意產業園區</td>
+      </tr>
+      <tr>
+        <td height="185" colspan="2"><p>嘉義文化創意產業園區，位在臺灣嘉義市西區，是中華民國文化部所屬的文化創意產業園區之一。其建築原是過去的嘉義酒廠；在嘉義酒廠遷到嘉義縣民雄鄉新廠區後，這裡便被規劃成文創園區。在五大文創園區之中，面積是第三大，但以樓板面積來看則是最大。 </p>
+        <p>  資料來源：維基百科</p></td>
+      </tr>
+      <tr>
+        <td width="499" align="center" class="titlestyle"><img src="嘉義文化園區1.jpg" width="400" height="267" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td width="419" align="center" class="titlestyle"><img src="嘉義文化園區2.jpg" width="399" height="264" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" class="titlestyle"><a name="a01" id="a01"></a>北門驛</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p onclick="MM_openBrWindow('嘉義文化園區1.jpg','','width=800,height=600')"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 北門驛最早是阿里山森林鐵路的起點車站，興建於明治43年（1910），車站建築全部以阿里山特有紅檜建材，是其特色。在未銜接縱貫鐵路嘉義車站之前，本站是阿里山森林鐵路蒸汽小火車的起點，也是阿里山鐵路貨運集散地，阿里山鐵路沿線的民生物資都由此運上山，地位相當重要。</p>
+        <p>資料來源：嘉義市紀錄庫&nbsp;&nbsp; top</p></td>
+      </tr>
+      <tr>
+        <td align="center" class="titlestyle"><img src="北門驛1.jpg" width="400" height="225" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+        <td align="center" class="titlestyle"><img src="北門驛2.jpg" width="400" height="267" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" class="titlestyle"><a name="a02" id="a02"></a>花磚博物館</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p>臺灣花磚博物館，是位於臺灣嘉義市西區一座以花磚為展示主題的私人博物館，其前身為「德豐材木商行」店主蘇友讓的故居，始建於台灣日治時期昭和13年。2014年，任職於科技業的徐嘉彬與一同從事花磚保護工作達20年經驗的工作團隊齊心買下老宅，將之改裝為花磚博物館，典藏花磚數量約達1500片，為臺灣首座以花磚為主題的博物館。</p>
+        <p>資料來源：維基百科&nbsp; &nbsp;top</p></td>
+      </tr>
+      <tr>
+        <td><p><img src="台灣花磚博物館1.jpg" width="400" height="240" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></p></td>
+        <td><img src="台灣花磚博物館2.jpg" width="400" height="267" onmouseover="MM_effectAppearFade(this, 1000, 50, 100, false)" /></td>
+      </tr>
+    </table>
+  </div>
   <div id="item"><ul id="MenuBar1" class="MenuBarVertical">
     <li><a href="main.html">古色古香</a>    </li>
     <li><a href="new2.html">大痰美食</a></li>

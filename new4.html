@@ -36,13 +36,28 @@
 }
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/banner04.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article"> 
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">個人資料</li>
+        <li class="TabbedPanelsTab" tabindex="0">學習經歷</li>
+        <li class="TabbedPanelsTab" tabindex="0">學習反思</li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+        <div class="TabbedPanelsContent">內容 1</div>
+        <div class="TabbedPanelsContent">內容 2</div>
+        <div class="TabbedPanelsContent">內容 3</div>
+      </div>
+    </div>
+  </div>
   <div id="item"><ul id="MenuBar1" class="MenuBarVertical">
     <li><a href="main.html">古色古香</a>    </li>
     <li><a href="new2.html">大痰美食</a></li>
@@ -55,6 +70,7 @@
 </div>
 <script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 </script>
 </body>
 </html>
